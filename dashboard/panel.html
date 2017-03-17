@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="import" href="components/paper-button/paper-button.html">
+	<link rel="import" href="components/paper-input/paper-input.html">
+	<link rel="import" href="components/paper-input/paper-textarea.html">
+	<style is="custom-style">
+		#title {
+			--paper-input-container: {
+				padding-top: 0;
+			}
+		}
+		.row {
+			display: flex;
+		}
+		paper-button {
+			flex: 1;
+			min-width: 1px;
+		}
+	</style>
+</head>
+<body>
+	<paper-input id="title" label="Anchor Left" always-float-label></paper-input>
+	<paper-input id="title" label="Anchor Right" always-float-label></paper-input>
+	<div class="row">
+		<paper-button id="show" class="nodecg-success" raised style="margin-left: 0;">Show</paper-button>
+		<paper-button id="hide" class="nodecg-danger" raised style="margin-right: 0;">Hide</paper-button>
+	</div>
+	<div class="row" style="margin-top: 8px;">
+		<paper-button id="7s" class="nodecg-info" raised data-duration="5" style="margin-left: 0;">5s</paper-button>
+		<paper-button id="15s" class="nodecg-info" raised data-duration="10">10s</paper-button>
+	</div>
+	<script src="panel.js"></script>
+</body>
+</html>
